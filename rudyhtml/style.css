@@ -1,12 +1,14 @@
-- HTML Reset CSS
-- Global Style
-- Header
-- Nav
-- Content
-- Footer
+/*
+
+	- HTML Reset CSS
+	- Global Style
+	- Header
+	- Nav
+	- Content
+	- Footer
 */
 
-/* Reset */
+/*	Reset 	*/
 html,
 body,
 div,
@@ -132,7 +134,7 @@ table {
   border-spacing: 0;
 }
 
-/* Global Style */
+/*	Global	Style 	*/
 body {
   background-color: #e2e2e2;
   font-size: 16px;
@@ -146,12 +148,12 @@ strong {
   font-style: italic;
 }
 
-/* Header */
+/* 	Header	*/
 header {
   position: fixed;
   width: 100%;
   height: 50px;
-  color: #ca1b1b;
+  color: #fff;
   background-color: #175529;
   z-index: 1;
 }
@@ -188,7 +190,7 @@ header h2 {
   color: #ffffff;
 }
 
-/* Navigation */
+/*	Navigation 	*/
 nav {
   position: fixed;
   margin-top: 50px;
@@ -235,7 +237,6 @@ nav ul li a:hover {
 nav ul li#active {
   border-left: 2px solid #a5c9ad;
   padding-left: 10px;
- 
 }
 
 nav ul li a,
@@ -245,7 +246,7 @@ nav ul li {
   line-height: 35px;
 }
 
-/* Content */
+/*	Content 	*/
 article {
   position: relative;
   float: left;
@@ -359,9 +360,6 @@ article p {
   width: 570px;
   color: #1e793c;
 }
-#green{
-  color:#1e793c;
-}
 
 article div#dev {
   position: relative;
@@ -392,7 +390,7 @@ article div#dev h3 {
   font-style: italic;
   font-size: 15px;
   line-height: 35px;
-  color: #1e793c;
+  color: #357da6;
   background-color: #ffffff;
   border-bottom: 1px solid #e3e6e8;
 }
@@ -428,7 +426,7 @@ article div#dev p {
   line-height: 24px;
 }
 
-/* Footer */
+/*	Footer 	*/
 footer {
   position: relative;
   float: left;
@@ -447,15 +445,4 @@ footer span#credits {
   color: #a0a4a8;
   font-size: 10px;
   font-style: italic;
-}
-.sixtyfour {
-  font-family: "Sixtyfour Convergence", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0,
-    "XELA" 0,
-    "YELA" 0;
 }
