@@ -1,3 +1,12 @@
+- HTML Reset CSS
+- Global Style
+- Header
+- Nav
+- Content
+- Footer
+*/
+
+/* Reset */
 html,
 body,
 div,
@@ -86,7 +95,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -100,21 +109,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -122,12 +127,12 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* Global Style */
 body {
   background-color: #e2e2e2;
   font-size: 16px;
@@ -141,19 +146,18 @@ strong {
   font-style: italic;
 }
 
+/* Header */
 header {
   position: fixed;
   width: 100%;
   height: 50px;
   color: #ca1b1b;
   background-color: #175529;
-  z-index: 2;
+  z-index: 1;
 }
-
 header h2 i.fa {
   font-size: 30px;
 }
-
 header h2 {
   position: relative;
   float: left;
@@ -167,9 +171,8 @@ header h2 {
   font-family: "Fira Sans", sans-serif;
   line-height: 10px;
   text-transform: capitalize;
-  background-color: #a7eead;
+  background-color:#a7eead;
 }
-
 .credits {
   position: relative;
   float: right;
@@ -185,62 +188,35 @@ header h2 {
   color: #ffffff;
 }
 
+/* Navigation */
 nav {
   position: fixed;
-  top: 50px;
-  left: 0;
+  margin-top: 50px;
   width: 270px;
   height: 100%;
   font-size: 13px;
-  background-color: #a7eead;
-  z-index: 2;
   overflow: auto;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #a7eead;
+  z-index: 1;
 }
-
 nav h3 {
   position: relative;
+  float: left;
   width: 100%;
   margin-top: 30px;
   margin-left: 20px;
   background-color: #a7eead;
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 nav ul {
-  list-style: none;
-  padding: 10px 20px 10px;
-  margin: 0;
-  background-color: #0f2713;
-}
-
-nav ul li {
   position: relative;
-  padding: 10px 20px;
-  color: #b0b7c4;
-  text-decoration: none;
-  line-height: 35px;
-  border-bottom: 1px solid #333;
-}
-
-nav ul li a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
+  float: left;
+  margin-top: 20px;
+  padding: 10px 20px 10px;
   width: 100%;
-}
-
-nav ul li a:hover,
-nav ul li#active a {
-  color: #19971f;
-}
-
-nav ul li#active {
-  border-left: 2px solid #a5c9ad;
-  padding-left: 10px;
-  background-color: #182f20;
+  background-color: #0f2713;
 }
 
 nav ul li i {
@@ -248,27 +224,28 @@ nav ul li i {
   padding-left: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  nav h3 {
-    text-align: center;
-  }
-
-  nav ul li {
-    text-align: center;
-    padding: 15px;
-  }
-
-  nav ul li a {
-    display: inline-block;
-  }
+nav ul li#active a,
+nav ul li#active {
+  text-decoration: none;
+  color: #aa0808;
+}
+nav ul li a:hover {
+  color: #19971f;
+}
+nav ul li#active {
+  border-left: 2px solid #a5c9ad;
+  padding-left: 10px;
+ 
 }
 
+nav ul li a,
+nav ul li {
+  color: #b0b7c4;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+/* Content */
 article {
   position: relative;
   float: left;
@@ -293,7 +270,6 @@ article #content {
   border-radius: 3px;
   border: 1px solid #cecfd0;
 }
-
 #content #wrapper {
   position: relative;
   float: left;
@@ -301,12 +277,10 @@ article #content {
   height: auto;
   margin-bottom: 50px;
 }
-
 #content a {
   color: #fff;
   text-decoration: none;
 }
-
 hr {
   position: relative;
   float: left;
@@ -314,7 +288,6 @@ hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 #content .button {
   background-color: #0f2713;
   border: none;
@@ -330,9 +303,8 @@ hr {
 
 #title a {
   text-decoration: none;
-  color: #367ea7;
+  color: 367ea7;
 }
-
 article h1 {
   padding-left: 10px;
   line-height: 30px;
@@ -356,7 +328,6 @@ article h2 span {
   color: #1e793c;
   text-transform: uppercase;
 }
-
 article h2 {
   color: #a0a4a8;
   margin-bottom: 50px;
@@ -388,9 +359,8 @@ article p {
   width: 570px;
   color: #1e793c;
 }
-
-#green {
-  color: #1e793c;
+#green{
+  color:#1e793c;
 }
 
 article div#dev {
@@ -458,6 +428,7 @@ article div#dev p {
   line-height: 24px;
 }
 
+/* Footer */
 footer {
   position: relative;
   float: left;
@@ -477,11 +448,14 @@ footer span#credits {
   font-size: 10px;
   font-style: italic;
 }
-
 .sixtyfour {
   font-family: "Sixtyfour Convergence", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
 }
